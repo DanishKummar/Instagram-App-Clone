@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "880068383436",
+    "project_id": "instagram-clone-f7c19",
+    "storage_bucket": "instagram-clone-f7c19.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880068383436:android:0d54240acba2f265dfa869",
+        "android_client_info": {
+          "package_name": "com.example.hepler"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1YQtHXeDZIDF7EUbzWOYxrcsdFl0BsKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880068383436:android:4e126a28c31bcbb7dfa869",
+        "android_client_info": {
+          "package_name": "com.example.instagram_ui"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1YQtHXeDZIDF7EUbzWOYxrcsdFl0BsKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880068383436:android:a5c211ff3544b0e3dfa869",
+        "android_client_info": {
+          "package_name": "com.example.new_insta"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1YQtHXeDZIDF7EUbzWOYxrcsdFl0BsKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,38 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Users
+    match /users/{userId} {
+      allow read: if true;
+      allow write: if request.auth.uid == userId;
+    }
+
+    // Stories
+    match /user_stories/{storyId} {
+      allow read: if true;
+      allow create: if request.auth != null;
+      allow update, delete: if request.auth != null && request.auth.uid == resource.data.user_id;
+    }
+
+    // Music Library
+    match /music_library/{docId} {
+      allow read: if true;
+    }
+
+    // Posts
+    match /user_post/{postId} {
+      allow read: if true;
+      allow create: if request.auth != null;
+
+      // Owner has full access
+      allow update, delete: if request.auth != null &&
+                            request.auth.uid == resource.data.user_uid;
+
+      // Others can update likes & like_count without type check
+      allow update: if request.auth != null &&
+                    request.resource.data.diff(resource.data).changedKeys()
+                      .hasOnly(['likes', 'like_count']);
+    }
+  }
+}
